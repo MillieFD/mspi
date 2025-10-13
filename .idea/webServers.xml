@@ -2,8 +2,12 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="224f38a4-a9b6-4abe-a655-800fd1ca9116" name="millie@mspi">
-        <fileTransfer accessType="SFTP" host="mspi" port="22" sshConfigId="6a8e852f-269c-4c5e-9c2c-42dc31d27ceb" sshConfig="millie@mspi" />
+      <webServer id="314a231a-fd75-4e69-8467-b4ee8f5debc9" name="millie@mspi-1">
+        <fileTransfer accessType="SFTP" host="mspi-1" port="22" sshConfigId="f5eddc55-c25a-4531-9fd3-ffb134428c1b" sshConfig="millie@mspi-1">
+          <advancedOptions>
+            <advancedOptions isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
       </webServer>
     </option>
   </component>
