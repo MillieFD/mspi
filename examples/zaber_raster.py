@@ -21,7 +21,7 @@ with Connection.open_serial_port("dev/tty/USB0") as connection:
     # When the device raises an alert, Zaber Motion invokes the corresponding event.
     # 1. Create a lambda function to handle the alert
     # 2. Subscribe to the event
-    # 3. Zaber Motion will execute the lambda fn each time that event occurs (e.g. to handle the alert)
+    # 3. Zaber Motion will execute the lambda fn each time the event occurs (e.g. to handle the alert)
 
     # Define a lambda fn to print alerts
     connection.alert.subscribe(lambda alert: print('Alert:', alert))
