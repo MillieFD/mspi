@@ -4,5 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.13"
 dependencies = [
+    "microepsilon",
     "zaber-motion>=7.11.0",
 ]
+
+[tool.uv.sources]
+microepsilon = { path = "../microepsilon-5.2.1.380-py3-none-any.whl" }
