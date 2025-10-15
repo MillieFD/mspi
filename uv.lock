@@ -5,7 +5,7 @@ requires-python = ">=3.13"
 [[package]]
 name = "microepsilon"
 version = "5.2.1.380"
-source = { path = "../microepsilon-5.2.1.380-py3-none-any.whl" }
+source = { path = "../micro-epsilon/dist/microepsilon-5.2.1.380-py3-none-any.whl" }
 wheels = [
     { filename = "microepsilon-5.2.1.380-py3-none-any.whl", hash = "sha256:45f4ee0bf5a5189491738b04d1f3a28e49dbfee5d2800a83358d63458f260910" },
 ]
@@ -16,13 +16,23 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "microepsilon" },
+    { name = "oceandirect" },
     { name = "zaber-motion" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "microepsilon", path = "../microepsilon-5.2.1.380-py3-none-any.whl" },
+    { name = "microepsilon", path = "../micro-epsilon/dist/microepsilon-5.2.1.380-py3-none-any.whl" },
+    { name = "oceandirect", path = "../ocean-direct/dist/oceandirect-1.33.0-py3-none-any.whl" },
     { name = "zaber-motion", specifier = ">=7.11.0" },
+]
+
+[[package]]
+name = "oceandirect"
+version = "1.33.0"
+source = { path = "../ocean-direct/dist/oceandirect-1.33.0-py3-none-any.whl" }
+wheels = [
+    { filename = "oceandirect-1.33.0-py3-none-any.whl", hash = "sha256:f196795335553c8b4dc102ee889fd43318546074491c0773aac3e1eb288055d9" },
 ]
 
 [[package]]

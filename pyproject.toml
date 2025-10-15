@@ -5,8 +5,10 @@ description = "Add your description here"
 requires-python = ">=3.13"
 dependencies = [
     "microepsilon",
+    "oceandirect",
     "zaber-motion>=7.11.0",
 ]
 
 [tool.uv.sources]
-microepsilon = { path = "../microepsilon-5.2.1.380-py3-none-any.whl" }
+microepsilon = { path = "../micro-epsilon/dist/microepsilon-5.2.1.380-py3-none-any.whl" }
+oceandirect = { path = "../ocean-direct/dist/oceandirect-1.33.0-py3-none-any.whl" }
