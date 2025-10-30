@@ -7,8 +7,9 @@ dependencies = [
     "microepsilon",
     "oceandirect",
     "zaber-motion>=7.14.0",
+    "thormotion"
 ]
 
 [tool.uv.sources]
-microepsilon = { path = "../microepsilon-5.2.1.380-py3-none-any.whl" }
-oceandirect = { path = "../oceandirect-1.33.0-py3-none-any.whl" }
+microepsilon = { path = "dependencies/microepsilon-5.2.1.380-py3-none-any.whl" }
+oceandirect = { path = "dependencies/oceandirect-1.33.0-py3-none-any.whl" }
