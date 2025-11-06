@@ -1,6 +1,6 @@
 """
 This example script demonstrates how to use the Thormotion library. Requires a connected Thorlabs motorized XY stage.
-See https://software.zaber.com/motion-library/ for more information.
+See https://github.com/MillieFD/thormotion for more information.
 
 The program:
     1. Establishes connection with the stage
@@ -9,7 +9,7 @@ The program:
     4. Handles alerts and disconnection events
 
 Raises:
-    ValueError: If no Zaber devices are detected
+    ValueError: If the specified KDC101 devices are not detected
 """
 
 import asyncio
@@ -19,21 +19,24 @@ from thormotion import KDC101
 # PARAMETERS: The system will scan a square area defined by two corners (start & end)
 
 # Define the starting coordinates
-x_start = 0 # mm
-y_start = 0 # mm
+x_start = 0  # mm
+y_start = 0  # mm
 
 # Define the end coordinates
-x_end = 10 # mm
-y_end = 10 # mm
+x_end = 10  # mm
+y_end = 10  # mm
 
 # Define the step size between adjacent points (resolution)
-step = 0.100 # mm
+step = 0.100  # mm
 
 # SETUP
 
 # Find the Thorlabs devices
-x = KDC101("ENTER SERIAL NUMBER HERE")
-y = KDC101("ENTER SERIAL NUMBER HERE")
+try:
+    x = KDC101("ENTER SERIAL NUMBER HERE")
+    y = KDC101("ENTER SERIAL NUMBER HERE")
+except ValueError:
+    raise ValueError("Specified KDC101 devices not found.")
 
 # Open USB communication
 x.open()
