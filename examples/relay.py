@@ -32,7 +32,7 @@ OFF = gpiod.line.Value.ACTIVE
 # Automatically determine ON value
 
 ON = Value.ACTIVE if OFF == Value.INACTIVE else Value.INACTIVE
-print(f"ON is {"HIGH" if ON == Value.ACTIVE else "LOW"}")
+print(f"ON is {'HIGH' if ON == Value.ACTIVE else 'LOW'}")
 
 # Print user instructions
 
@@ -51,13 +51,14 @@ try:
     with gpiod.request_lines(
             CHIP,
             consumer="cc-relay",  # Arbitrary process name
-            config={pin: gpiod.LineSettings(direction=Direction.OUTPUT, output_value=OFF) for pin in PINS.values()},
+            config={
+                pin: gpiod.LineSettings(direction=Direction.OUTPUT, output_value=OFF)
+                for pin in PINS.values()
+            },
     ) as request:
-
-        # LOOP START: Main event loop repeats indefinitely until interrupted
+        # LOOP START: The main event loop repeats indefinitely until interrupted
 
         while True:
-
             # INPUT: Read characters immediately without waiting for Enter
             # 1. Enable stdin raw
             # 2. Read one character
@@ -71,13 +72,13 @@ try:
 
             if not ch:
                 # ch is not a valid character
-                raise ValueError("Encountered invalid character")
+                raise ValueError("Invalid character")
             elif ch in PINS:
                 # ch is a valid key
                 pin = PINS[ch]
                 val = ON if request.get_value(pin) == OFF else OFF
                 request.set_value(pin, val)
-                print(f"Set relay {ch} (GPIO{pin}) {"ON" if val == ON else "OFF"}")
+                print(f"Set relay {ch} (GPIO{pin}) {'ON' if val == ON else 'OFF'}")
             else:
                 # ch is a valid non-key character
                 break
@@ -91,7 +92,10 @@ finally:
     with gpiod.request_lines(
             CHIP,
             consumer="cc-relay-shutdown",  # Arbitrary process name
-            config={pin: gpiod.LineSettings(direction=Direction.OUTPUT, output_value=OFF) for pin in PINS.values()},
+            config={
+                pin: gpiod.LineSettings(direction=Direction.OUTPUT, output_value=OFF)
+                for pin in PINS.values()
+            },
     ) as request:
         for pin in PINS.values():
             request.set_value(pin, OFF)
