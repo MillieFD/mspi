@@ -1,7 +1,6 @@
 """
-This example script demonstrates how to use the Micro Epsilon Data Acquisition Library (MEDAQLib).
-Requires a connected Micro Epsilon sensor. See https://www.micro-epsilon.co.uk/service/software-sensorintegration/
-for more information.
+This example script demonstrates how to use the Micro Epsilon Data Acquisition Library (MEDAQLib). Requires a connected
+Micro Epsilon sensor. See https://www.micro-epsilon.co.uk/service/software-sensorintegration/ for more information.
 
 The program:
     1. Establishes connection with the sensor
@@ -15,6 +14,7 @@ Raises:
 import time
 
 from microepsilon import MEDAQLib, ERR_CODE, SENSOR_TYPE
+
 
 def check_error() -> None:
     """
@@ -40,6 +40,7 @@ def check_error() -> None:
     if sensor.GetLastError() != ERR_CODE.NO_ERROR:
         # Print the OpenSensor Error message
         raise ValueError(sensor.GetError())
+
 
 # SETUP: Tell MEDAQLib about the sensor
 
