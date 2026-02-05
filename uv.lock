@@ -26,7 +26,7 @@ requires-dist = [
     { name = "microepsilon", path = "dependencies/microepsilon-5.2.1.380-py3-none-any.whl" },
     { name = "oceandirect", path = "dependencies/oceandirect-1.33.0-py3-none-any.whl" },
     { name = "thormotion" },
-    { name = "zaber-motion" },
+    { name = "zaber-motion", specifier = "==8.0.2" },
 ]
 
 [[package]]
@@ -90,18 +90,18 @@ wheels = [
 
 [[package]]
 name = "zaber-motion"
-version = "7.14.0"
+version = "8.0.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "reactivex" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f6/62/ba59a5b04f4cdee92856b28b5fc2332e1a11374031ac9b25b5826c2530c2/zaber_motion-7.14.0.tar.gz", hash = "sha256:7d5e6db39e31a6021ef36c83e7f6083e1099141847efd4e0a34d51bce9ebc91d", size = 266306, upload-time = "2025-10-27T21:21:59.125Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/81/93/688c6db451eda3d9153b07e9d04a2038b5af9a2a6d5766630854a010b91d/zaber_motion-8.0.2.tar.gz", hash = "sha256:ef804f132b5cbdbf938f970752ae7c545dd4265ba80fbad20448df83c27809be", size = 267197, upload-time = "2025-12-18T16:27:35.993Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6f/d9/d388b7cfbc366f13b363a4d19523b06ddc54eacc3f5288d2ac5d485e825d/zaber_motion-7.14.0-py3-none-macosx_10_4_universal2.whl", hash = "sha256:bacc8a0ab9154d6d6f7b6b8badd34d51026f58f3a1bcd441235d50acb1cd4079", size = 12218215, upload-time = "2025-10-27T21:21:45.44Z" },
-    { url = "https://files.pythonhosted.org/packages/bf/cd/e2c0530743abf53bf7849e7342d0a7ab8e0a2df0c938ee700de8600bc7a3/zaber_motion-7.14.0-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:63618ad970b2abca258580a3da70fa23e6b96d9d64b9ec21a95218ac6802c0a0", size = 6236568, upload-time = "2025-10-27T21:21:48.453Z" },
-    { url = "https://files.pythonhosted.org/packages/ac/34/778f6a5d3d82fad27d28f163312ebfbdea6413eefc6341688bcff3be753a/zaber_motion-7.14.0-py3-none-manylinux_2_27_armv7l.whl", hash = "sha256:814b0e091be8ee273c3b4ab19772d34660b3897062a1e546f627ab3efd2dc616", size = 6323521, upload-time = "2025-10-27T21:21:50.311Z" },
-    { url = "https://files.pythonhosted.org/packages/34/95/bf25670de54490549306d0628ecd805cae5e1d68826be7bd08e45a7c5f2c/zaber_motion-7.14.0-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:1b781381190b9b43fe46b87b46e4b36677748f5f5283759e502778de87953f56", size = 6791037, upload-time = "2025-10-27T21:21:52.097Z" },
-    { url = "https://files.pythonhosted.org/packages/67/ff/624b7468bb1fa42dda41856c903918233f44c50038e8fbcd92acac891d5e/zaber_motion-7.14.0-py3-none-win32.whl", hash = "sha256:e5f7b266466f595a3b7bc393405a17817c474dd9b30f61f2fdf8690cd73b3de4", size = 6478484, upload-time = "2025-10-27T21:21:53.794Z" },
-    { url = "https://files.pythonhosted.org/packages/3a/cf/91a5d2defa17baae4395415f5758fa2612bb8b2c96be97e05f70ad8c2ffd/zaber_motion-7.14.0-py3-none-win_amd64.whl", hash = "sha256:e0ac42d51fbae94d2ff78d847069a76edf6d3e21f4d156eb66d7ba71649122dd", size = 6715613, upload-time = "2025-10-27T21:21:55.796Z" },
-    { url = "https://files.pythonhosted.org/packages/61/a3/5e14c019344f7f21dfc965a831944def560ee714b8e23b3fdaf3b1c500c2/zaber_motion-7.14.0-py3-none-win_arm64.whl", hash = "sha256:db908684bed3de9df2bdc4c348aa9b13fb47b6dc91285b50983a06161a46518b", size = 6099852, upload-time = "2025-10-27T21:21:57.828Z" },
+    { url = "https://files.pythonhosted.org/packages/7e/aa/22dcd824c5a53badb3243be516f3a0358f22dd8ca750872ea637f58a6c41/zaber_motion-8.0.2-py3-none-macosx_10_4_universal2.whl", hash = "sha256:f790baa23cb349f56e76cde121890b1a9b66ec660e0175e602017dc03360ba6b", size = 12940057, upload-time = "2025-12-18T16:27:22.914Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/80/a02b125e91802e3cd2a79860d1ca6e4acc485e23faa6bc78135e0d1e6e9f/zaber_motion-8.0.2-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:d5fc891c4b2b067af5582cbe54dc580a6d7f839c7331a37e5c21ab718979b04a", size = 6528251, upload-time = "2025-12-18T16:27:25.703Z" },
+    { url = "https://files.pythonhosted.org/packages/75/2c/56d1f5ff2b271ff2b98b3c7df69fe3c4ebdb81eccddd83e08eea24713e64/zaber_motion-8.0.2-py3-none-manylinux_2_27_armv7l.whl", hash = "sha256:52809dd8934154b199bfa7ce144491db0a5f007521b5488d1f8d0c5d3b896619", size = 6619445, upload-time = "2025-12-18T16:27:27.395Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/28/14ea85efc2c7a2bcc6aae5eb394174b579fdc234cff4ea4ff453a918a420/zaber_motion-8.0.2-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:ef73b8ed21fa3abedc10ee75d8ea88c3e9bcb78b44c5f181f3678dda76414e69", size = 7109829, upload-time = "2025-12-18T16:27:29.033Z" },
+    { url = "https://files.pythonhosted.org/packages/bf/7d/c3b79802314d1413d5a52f8b981d54e520cb22a1d6bf2c5aa2c052277aa0/zaber_motion-8.0.2-py3-none-win32.whl", hash = "sha256:aaabf2b2fc92e49bc85c7f2635d98b0029c80e6cce4cd09e8b52d9b03fa03626", size = 6775944, upload-time = "2025-12-18T16:27:30.902Z" },
+    { url = "https://files.pythonhosted.org/packages/04/05/a2eb379937376913c06ffdd0e089d80d091e7e7b6c410a449e5579e18a02/zaber_motion-8.0.2-py3-none-win_amd64.whl", hash = "sha256:545a96c9548a516c4be3bae858ffceac7def1a81a3a91d3de84d1d0a56287261", size = 7034638, upload-time = "2025-12-18T16:27:32.581Z" },
+    { url = "https://files.pythonhosted.org/packages/56/7a/442a0c225ef1e6ba98285eb408df043b75553796cb311b9536793596e212/zaber_motion-8.0.2-py3-none-win_arm64.whl", hash = "sha256:08d10e60ed51f81ca025a949650f995f8db81a4f93c09d2077d2c38bd5a8eeb2", size = 6385356, upload-time = "2025-12-18T16:27:34.331Z" },
 ]
