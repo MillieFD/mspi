@@ -55,7 +55,6 @@ x.move_absolute(x_start)
 y.move_absolute(y_start)
 
 while x.get_position() <= x_end:
-
     # Move the y-axis from START to END coordinates
     while y.get_position() <= y_end:
         # Move the y-axis to the specified position
